@@ -1,7 +1,10 @@
-/*
+ /*
   * Programmer: Tatenda E Chipwanya    Date completed: February 25, 2021
-  * Instructor: Khulekani Sibanda      Class: SCS 1101
+  * Instructor: Khulekani Sibanda      Class: SCS 1101(Computer Science)
   * Version:    1.0.0
+  *
+  * National University of Science and Technology (Zimbabwe)
+  * 
   *
   * Computes and prints the Body Mass Index(BMI)
   * The program asks the user to enter their
