@@ -1,7 +1,8 @@
  /*
   * Programmer: Tatenda E Chipwanya    Date completed: February 23, 2021
-  * Instructor: Khulekani Sibanda      Class: SCS 1101
+  * Instructor: Khulekani Sibanda      Class: SCS 1101(Computer Science)
   * Version:    1.0.0
+  * National University of Science and Technology (Zimbabwe)
   *
   * Computes and prints a bill and implements the Teacher's Discount policy
   * the computation offers teachers a general 10% Discount on purchased goods for
