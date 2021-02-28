@@ -1,7 +1,8 @@
  /*
   * Programmer: Tatenda E Chipwanya    Date completed: February 9, 2021
-  * Instructor: Khulekani Sibanda      Class: SCS 1101
-  *
+  * Instructor: Khulekani Sibanda      Class: SCS 1101(Computer Science)
+  * Version:    1.0.0
+  * National University of Science and Technology (Zimbabwe)
   * A PROGRAM THAT CALCULATES THE EQUATION OF A NORMAL GIVEN TWO COORDINATES.
   *
   */
