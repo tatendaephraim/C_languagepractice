@@ -1,8 +1,9 @@
 
  /*
   * Programmer: Tatenda E Chipwanya    Date completed: February 27, 2021
-  * Instructor: Khulekani Sibanda      Class: SCS 1101
+  * Instructor: Khulekani Sibanda      Class: SCS 1101(Computer Science)
   * Version:    1.0.0
+  * National University of Science and Technology(Zimbabwe)
   *
   * Chatflow Wireless offers customers 600 weekday minutes for a flat rate of 39.99.
   * Night (8 P.M. to 7 A.M. ) and weekend minutes are free, but additional
