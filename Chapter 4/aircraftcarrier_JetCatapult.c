@@ -1,6 +1,9 @@
  /*
   * Programmer: Tatenda E Chipwanya    Date completed: February 8, 2021
-  * Instructor: Khulekani Sibanda     Class: SCS 1101
+  *
+  * Instructor: Khulekani Sibanda      Class: SCS 1101(Computer Science)
+  * Version:    1.0.0
+  * National University of Science and Technology (Zimbabwe)
   *
   * PROGRAM THAT CALCULATES ACCELERATION AT TAKEOFF AND TIME A JET IS CATAPULT FROM AN AIRCRAFT CARRIER.
   *
