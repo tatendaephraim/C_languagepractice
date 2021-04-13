@@ -1,0 +1,102 @@
+ /*
+  * Programmers: Tatenda E CHIPWANYA N02012293I   Date completed: April 8, 2021
+                 Luckmore  NGULUBE   N02019440C
+                 Allan M MABHENA     N02017697G
+                 Tanaka N MHLANGA     N02019415W
+                 Leonel T NEZIRA     N02019369C
+                 Patience MUPIKENI   N02019697M
+
+
+  * Instructor: Khulekani Sibanda      Class: SCS 1101
+  * Institution: National University of Science and Technology(Zimbabwe)
+  * Program :   BSC Computer Science
+  * Version:    1.0.0
+  *
+  * The program prompts the user to enter an integer
+  * it test the entered integer and  check if the following conditions which are
+  * whether it is divisible by six or five and then prints the appropriate output.
+  *
+  *
+  */
+    #include <stdio.h>
+    #include<stdlib.h>
+    #include <math.h>
+
+    #define NUMBER_SIX 6
+    #define NUMBER_FIVE 5 /*Defining the constants that cannot change as the program runs*/
+
+    /* Function prototypes */
+    void instruct(void);
+    int enter_Integer(int enteredNum);   /*To validate whether an integer has been entered*/
+    void displayResult(int validInteger);
+
+    int
+    main()
+    {
+        int validInteger,enteredNum;
+
+        instruct();
+        printf("Please enter an Integer above Zero.\n");
+        scanf("%d",&enteredNum);
+        validInteger = enter_Integer(enteredNum); /*Test the integer ,validate and store it in a variable valid integer*/
+
+        displayResult(validInteger); /*Test the condition and display the result*/
+
+        return 0;
+    }
+/*
+ * Displays user instructions
+ */
+
+ void instruct(void)
+ {
+    printf("The program test whether the entered integer is divisible by %d and %d \n", NUMBER_SIX,NUMBER_FIVE);
+    printf("The program would then print appropriate output based on the conditions met.\n\n\n");
+ }
+/*
+ * Validates the entered input
+ */
+ int enter_Integer(int enteredNum)
+  {
+      int validInteger;
+      if( enteredNum<1)
+         {
+             printf("Please Enter a Valid Integer greater than Zero Run code Again");
+             exit(0);
+
+         }
+
+
+        validInteger = enteredNum;
+
+        return validInteger;
+  }
+/*
+ * Test Conditions and display the results
+ * Input: validInteger
+ */
+void displayResult(int validInteger)
+{
+    if(validInteger%NUMBER_SIX==0 && validInteger%NUMBER_FIVE==0)
+    {
+        printf("Is %d Divisible by %d and %d ? True.\n",validInteger,NUMBER_FIVE,NUMBER_SIX);
+        printf("Is %d Divisible by %d or %d ? True.\n",validInteger,NUMBER_FIVE,NUMBER_SIX);
+        printf("Is %d Divisible by %d or %d . Not Both? False.\n",validInteger,NUMBER_FIVE,NUMBER_SIX);
+    }
+    else
+    {
+        if(validInteger%NUMBER_FIVE==0 || validInteger%NUMBER_SIX==0)
+        {
+            printf("Is %d Divisible by %d and %d ? False.\n",validInteger,NUMBER_FIVE,NUMBER_SIX);
+            printf("Is %d Divisible by %d or %d ? True.\n",validInteger,NUMBER_FIVE,NUMBER_SIX);
+            printf("Is %d Divisible by %d or %d . Not Both? True.\n",validInteger,NUMBER_FIVE,NUMBER_SIX);
+        }
+        else
+            {
+                printf("Is %d Divisible by %d and %d ? False.\n",validInteger,NUMBER_FIVE,NUMBER_SIX);
+                printf("Is %d Divisible by %d or %d ? False.\n",validInteger,NUMBER_FIVE,NUMBER_SIX);
+                printf("Is %d Divisible by %d or %d . Not Both? False.\n",validInteger,NUMBER_FIVE,NUMBER_SIX);
+            }
+    }
+
+}
