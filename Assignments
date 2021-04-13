@@ -1,0 +1,85 @@
+/*
+  * Programmers: Tatenda E CHIPWANYA N02012293I   Date completed: April 8, 2021
+                 Luckmore  NGULUBE   N02019440C
+                 Allan M MABHENA     N02017697G
+                 Tanaka N MHLANGA    N02019415W
+                 Leonel T NEZIRA     N02019369C
+                 Patience MUPIKENI   N02019697M
+
+
+  * Instructor: Khulekani Sibanda      Class: SCS 1101
+  * Institution: National University of Science and Technology(Zimbabwe)
+  * Program :   BSC Computer Science
+  * Version:    1.0.0
+  *
+  * The program is a number guessing game
+  * if the user correctly guesses the pre-determined number for the first time
+  * the user gets a percentage score of 10 and the user has only two attempts
+  *
+  *
+  */
+    #include <stdio.h>
+    #include<stdlib.h>
+    #include <math.h>
+
+    #define SUCCESS_SCORE 10
+    #define GUESS_NUMBER 79 /*Defining the constants that cannot change as the program runs*/
+    #define DIVISOR 100
+
+    /* Function prototypes */
+    void instruct(void);
+    void displayResult(void);
+
+    int
+    main()
+    {
+        double score;
+        int userGuess;
+
+        instruct();
+        displayResult(); /*Call method to begin guessing*/
+
+        return 0;
+    }
+/*
+ * Displays user instructions
+ */
+
+ void instruct(void)
+ {
+    printf("The program prompts the user to Guess a number.\n\n\n");
+
+ }
+ /*
+ * The program checks whether the user guessed correctly if not it gives a second chance to guess
+ * Input: userGuess
+ */
+void displayResult(void)
+{
+    double score;
+    int userGuess;
+
+    for(int i = 0;i < 2; i++)
+    {
+        printf("Enter your desired guess.\n\n>>");
+        scanf("%d",&userGuess);
+        if(userGuess == GUESS_NUMBER)
+        {
+            printf("Congratulations your input guess %d is correct your score is %d.",userGuess,SUCCESS_SCORE);
+
+            i+=1; /*Increment the iteration to exit the loop*/
+        }
+        else if(i== 0 && userGuess !=GUESS_NUMBER)
+        {
+            score = (((80-pow(GUESS_NUMBER-userGuess,2)))/DIVISOR)*SUCCESS_SCORE;
+            printf("Sorry your input guess %d is not correct your score is %.2f.\n\n",userGuess,score);
+        }
+        else
+        {
+            score = (((80-pow(GUESS_NUMBER-userGuess,2)))/DIVISOR)*SUCCESS_SCORE;
+            printf("Sorry your input guess %d is not correct your score is %.2f.\n\n",userGuess,score);
+        }
+
+
+    }
+}
